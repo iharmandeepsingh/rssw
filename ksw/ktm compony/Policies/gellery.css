@@ -1,0 +1,79 @@
+/* Image Grid */
+.Industrial-images {
+    display: grid;
+    grid-template-columns: repeat(3, 33.34%); /* 4 images in a row */
+    gap: 15px; /* Space between images */
+    padding: 20px;
+    max-width: 100%;
+}
+
+.image-container {
+    position: relative;
+    border: 2px solid #ddd; /* Border around each image */
+    border-radius: 8px; /* Rounded corners for the border */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.img1 {
+    width: 100%; /* Responsive images */
+    height: 250px; /* Maintain aspect ratio */
+}
+
+.hover-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    display: none; /* Hidden by default */
+    border-radius: 5px;
+}
+
+/* Display text on hover */
+.image-container:hover .hover-text {
+    display: block;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+    margin: auto;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f44336;
+}
+
+/* Ensure the gallery works when images are clicked */
+.image-container img {
+    cursor: pointer;
+}

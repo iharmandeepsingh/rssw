@@ -1,0 +1,71 @@
+
+
+/* Hero Section */
+.hero {
+    background: url('utils/Banners/images/img3.jpg') no-repeat center/cover;
+    color: white;
+    padding: 10% 5%;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Product Section */
+.product-section {
+    background: white;
+    padding: 5% 10%;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
+
+.product-card {
+    background: rgb(39, 148, 216);
+    color: white;
+    padding: 20px;
+    width: 30%;
+    margin: 1% 0;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .product-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 80%;
+    }
+}
+

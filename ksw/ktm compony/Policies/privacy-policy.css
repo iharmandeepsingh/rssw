@@ -1,0 +1,160 @@
+.subheading{
+    color:rgb(39, 148, 216);
+}
+
+#heading-underline{
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    height: 0.3rem;
+    width: 3rem;
+    background-color:rgb(39, 148, 216);
+}
+
+
+
+.para{
+    font-weight: lighter;
+    text-align: justify;
+
+}
+
+.banner{
+    width: 100%;
+}
+
+
+#info{
+  height: auto;
+  width: auto;
+  margin-left: 7%;  
+  width: 75%;
+  
+}
+@media (max-width: 767px){
+.footers {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 2rem;
+    border: 5px;
+    border-radius: 2px;
+    border-style: solid;
+    background-color: rgb(39, 148, 216);
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footers .row {
+    display: block;
+}
+
+.footers .row > div {
+    margin-bottom: 20px;
+}
+
+.footers h3,
+.footers h2 {
+    color: white;
+}
+
+.footers a {
+    text-decoration: none;
+    color:white;
+    transition: color 0.7s;
+}
+
+.footers a:hover {
+    color:white;
+}
+
+.footers ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footers ul li {
+    padding: 1px 0;
+}
+.general-info{
+    display: none;
+}
+.logo-text {
+    margin-top: 10%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    position: relative;
+    left: 2.5rem;
+  }
+}
+
+@media (min-width: 768px){
+    .footers{
+        width: 100%;
+        position: relative;
+        top: 2rem;
+        background-color: rgb(39, 148, 216);
+        border-radius: 3px;
+        color: white;
+      
+  
+    }
+  
+    .footers .Latestnews{
+      padding-left: 7%;
+      padding-right: 8%;
+    }
+  
+    .footers .Product-range{
+      padding-right: 10%;
+    }
+  
+    .footers.Get-in-Touch{
+      padding-right: 5%;
+    }
+  
+    .footers .row {
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    .footers .row > div {
+        flex: 1;
+   
+    }
+  
+    .footers h3,
+    .footers h2 {
+        font-size: 1.5rem;
+        color: white;
+    }
+  
+    .footers a {
+        text-decoration: none;
+        color: rgb(229, 241, 237);
+        transition: color 0.7s;
+    }
+  
+    .footers  a:hover {
+        color: rgb(35, 34, 34);
+    }
+  
+    .footers ul {
+        padding: 0;
+        list-style-type: none;
+    }
+  
+    .footers ul li {
+        margin-bottom: 10px;
+    }
+    .general-info {
+        display: flex;
+        gap: 2rem;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+}
+

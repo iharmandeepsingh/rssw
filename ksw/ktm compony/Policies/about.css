@@ -1,0 +1,169 @@
+
+/* General Styles */
+
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 7%;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 1.5% 7%;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* Overview Section */
+.overview {
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.abt-img-box {
+    margin-bottom: 20px;
+}
+
+.abt-img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.big-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.col-md-6, .col-md-12 {
+    flex: 0.4;
+}
+
+.title h2 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Numbers Section */
+.numbers {
+    background-color: #fff;
+    padding: 50px 0;
+    border-top: 1px solid #ddd;
+}
+
+.statistic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.number-box {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.text-box p {
+    font-size: 1.1rem;
+    color: #777;
+}
+.banner{
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .overview {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .big-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-6, .col-md-12 {
+        width: 100%;
+    }
+
+    .title h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .numbers .statistic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%; /* Stacks in a single column on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .number-box {
+        font-size: 2.5rem;
+    }
+
+    .text-box p {
+        font-size: 1rem;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .title h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .overview {
+        padding: 20px;
+    }
+
+    .abt-para p {
+        font-size: 0.9rem;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .number-box {
+        font-size: 2rem;
+    }
+
+    .text-box p {
+        font-size: 0.9rem;
+    }
+}
